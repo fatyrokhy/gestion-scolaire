@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Cours - Professeur</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 ">
+    <nav class="bg-slate-400 p-2 grid grid-cols-2">
+        <ul></ul>
+        <button id="logout" class="bg-slate-800 text-white px-4 py-2 rounded-full order-2 place-self-end">
+            Déconnexion
+        </button>
+    </nav>
+
+    <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md mt-12">
+        <h1 class="text-2xl font-bold text-gray-800 mb-4"> Cours du Professeur</h1>
+
+        <table class="w-full border-collapse bg-white shadow-lg rounded-lg overflow-hidden">
+            <thead class="bg-slate-600 text-white">
+                <tr>
+                    <th class="py-3 px-4 text-left">Classe</th>
+                    <th class="py-3 px-4 text-left">Date</th>
+                    <th class="py-3 px-4 text-left">Heure</th>
+                    <th class="py-3 px-4 text-left">Étudiants</th>
+                </tr>
+            </thead>
+            <tbody id="coursProfTable" class="divide-y divide-gray-200">
+                <!-- Les cours seront ajoutés ici via JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <div id="modal" class="hidden fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center">
+        <div class="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
+            <h2 id="modalTitle" class="text-xl font-bold mb-4"></h2>
+            <ul id="studentList" class="list-disc pl-5 space-y-2">
+                <!-- Les étudiants seront ajoutés ici -->
+            </ul>
+            <button onclick="closeModal()" class="mt-4 px-4 py-2 bg-red-600 text-white rounded">Fermer</button>
+        </div>
+    </div>
+    <script src="coursproff.js"></script>
+
+</body>
+</html>

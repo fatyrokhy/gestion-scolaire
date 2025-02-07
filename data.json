@@ -1,0 +1,155 @@
+{
+    "user": [
+      { "id": 1, "login": "amina4@gmail.com", "password": 123, "role": "admin" },
+      {
+        "id": 2,
+        "login": "moussa@gmail.com",
+        "password": 124,
+        "role": "etudiant"
+      },
+      {
+        "id": 3,
+        "login": "moustapha@gmail.com",
+        "password": 456,
+        "role": "proff"
+      }
+    ],
+    "etudiant": [
+      {
+        "id": 1,
+        "nom": "diop",
+        "prenom": "moussa",
+        "age": "25",
+        "classe_id": 2,
+        "note": ["15", "7", "14"],
+        "telephone": "764"
+      },
+      {
+        "id": 2,
+        "nom": "diopd",
+        "prenom": "moussadn",
+        "age": "25",
+        "classe_id": 4,
+        "note": ["11", "17", "14"],
+        "telephone": "797"
+      },
+      {
+        "id": 3,
+        "nom": "Niass",
+        "prenom": "Amadou",
+        "age": "25",
+        "classe_id": 1,
+        "note": ["19", "15", "10"],
+        "telephone": "777"
+      },
+      {
+        "id": 4,
+        "nom": "ka",
+        "prenom": "Aminata",
+        "age": "18",
+        "classe_id": 6,
+        "note": ["12", "14", "17"],
+        "telephone": "788"
+      },
+      {
+        "id": 5,
+        "nom": "kane",
+        "prenom": "diewo",
+        "age": "30",
+        "classe_id": 5,
+        "note": ["12", "14", "15"],
+        "telephone": "789"
+      },
+      {
+        "id": 6,
+        "nom": "kane",
+        "prenom": "fatima",
+        "age": "30",
+        "classe_id": 8,
+        "note": ["10", "11", "15"],
+        "telephone": "755"
+      },
+      {
+        "id": 7,
+        "nom": "diopd",
+        "prenom": "moussadn",
+        "age": "25",
+        "classe_id": 4,
+        "note": ["11", "17", "14"],
+        "telephone": "797"
+      },
+      {
+        "id": 8,
+        "nom": "Niass",
+        "prenom": "Amadou",
+        "age": "25",
+        "classe_id": 1,
+        "note": ["19", "15", "10"],
+        "telephone": "777"
+      },
+      {
+        "id": 9,
+        "nom": "ka",
+        "prenom": "Aminata",
+        "age": "18",
+        "classe_id": 6,
+        "note": ["12", "14", "17"],
+        "telephone": "788"
+      }
+    ],
+    "classe": [
+      { "id": 1, "classe": "L1 - DEV", "id_niveau": "L1", "id_filiere": "DEV" },
+      { "id": 2, "classe": "L2 - GL", "id_niveau": "L2", "id_filiere": "GL" },
+      { "id": 3, "classe": "L2 - DEV", "id_niveau": "L2", "id_filiere": "DEV" },
+      {
+        "id": 4,
+        "classe": "L1 - MARKETING",
+        "id_niveau": "L1",
+        "id_filiere": "MARKETING"
+      },
+      {
+        "id": 5,
+        "classe": "L2 - DESIGN",
+        "id_niveau": "L2",
+        "id_filiere": "DESIGN"
+      },
+      { "id": 6, "classe": "L2 - MPI", "id_niveau": "L2", "id_filiere": "MPI" },
+      { "id": 7, "classe": "L1 - GL", "id_niveau": "L1", "id_filiere": "GL" },
+      { "id": 8, "classe": "L3 - PC", "id_niveau": "L3", "id_filiere": "PC" },
+      { "id": 9, "classe": "M1 - PC", "id_niveau": "M1", "id_filiere": "PC" },
+      {
+        "id": 10,
+        "classe": "M2 - Data",
+        "id_niveau": "M2",
+        "id_filiere": "Data"
+      },
+      {
+        "id": 11,
+        "classe": "M1 - DESIGN",
+        "id_niveau": "M1",
+        "id_filiere": "DESIGN"
+      }
+    ],
+    "cours":[],
+    "niveau": [
+      { "id": 1, "niveau": "L1" },
+      { "id": 2, "niveau": "L2" },
+      { "id": 3, "niveau": "L3" },
+      { "id": 4, "niveau": "M1" },
+      { "id": 5, "niveau": "M2" },
+      { "id": 6, "niveau": "Baccalauriat" },
+      { "id": 7, "niveau": "Doctorat" }
+    ],
+    "filiere": [
+      { "id": 1, "filiere": "GL" },
+      { "id": 2, "filiere": "DESIGN" },
+      { "id": 3, "filiere": "MARKETING" },
+      { "id": 4, "filiere": "MPI" },
+      { "id": 5, "filiere": "PC" },
+      { "id": 6, "filiere": "Data" },
+      { "id": 7, "filiere": "DEV" },
+      { "id": 8, "filiere": "Biologie" },
+      { "id": 9, "filiere": "Economie" }
+    ]
+  }
+  

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Étudiants</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css">
+</head>
+<body class="bg-gray-100 ">
+    <nav class="bg-slate-400 p-2 grid grid-cols-2">
+        <ul></ul>
+        <button id="logout" class="bg-slate-800 text-white px-4 py-2 rounded-full order-2 place-self-end">
+            Déconnexion
+        </button>
+    </nav>
+
+    <div class="max-w-6xl mx-auto bg-white p-6 rounded-lg shadow-md mt-12">
+        <h2 class="text-2xl font-semibold mb-4">Liste des Étudiants</h2>
+        <table class="w-full border-collapse bg-white shadow-lg rounded-lg overflow-hidden">
+            <thead class="bg-slate-600 text-white">
+                <tr>
+                    <th class="py-3 px-4 text-center">Nom</th>
+                    <th class="py-3 px-4 text-center">Prénom</th>
+                    <th class="py-3 px-4 text-center">Âge</th>
+                    <th class="py-3 px-4 text-center">Classe</th>
+                    <th class="py-3 px-4 text-center">Téléphone</th>
+                    <th class="py-3 px-4 text-center">Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tableEtudiant" class="text-center">
+                <!-- Liste des étudiants  -->
+            </tbody>
+        </table>
+    </div>
+    <script src="listeEtudiant.js" type="module"></script>
+
+</body>
+</html>
