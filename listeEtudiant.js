@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", async function() {
-
+    retour()
     const etudiant = await fetch("data.json");
     const data = await etudiant.json();
 
@@ -30,12 +30,15 @@ document.addEventListener("DOMContentLoaded", async function() {
     
 });
 
-
-
-
  // Pour se déconnecter
  const deconnect=document.querySelector("#logout");
  deconnect.addEventListener('click',()=>{
      localStorage.removeItem("user");
      window.location.href = "connexion.html"; 
  });
+ function retour() {
+    const user=JSON.parse(localStorage.getItem('user')) ;
+    if (!user) {
+        window.location.href='connexion.html';
+    }
+ }

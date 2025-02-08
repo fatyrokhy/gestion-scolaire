@@ -19,6 +19,12 @@ cours.forEach(c => {
 
     tableBody.appendChild(row);
 });
+ function retour() {
+    const user=JSON.parse(localStorage.getItem('user')) ;
+    if (!user) {
+        window.location.href='connexion.html';
+    }
+ }
 
 const deconnect=document.querySelector("#logout");
  deconnect.addEventListener('click',()=>{

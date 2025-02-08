@@ -1,5 +1,6 @@
-
-const coursProfesseur = [
+document.addEventListener("DOMContentLoaded", async function() {
+    retour();
+    const coursProfesseur = [
     { classe: "L1 Informatique", date: "2024-02-10", heure: "08:00 - 10:00", etudiants: ["Ali", "Fatou", "Oumar"] },
     { classe: "L2 Génie Logiciel", date: "2024-02-12", heure: "10:30 - 12:30", etudiants: ["Moussa", "Awa", "Khadija"] },
     { classe: "L3 Data Science", date: "2024-02-15", heure: "14:00 - 16:00", etudiants: ["Demba", "Sophie", "Issa"] }
@@ -43,6 +44,15 @@ function showStudents(index) {
 function closeModal() {
     modal.classList.add("hidden");
 }
+});
+
+
+function retour() {
+    const user=JSON.parse(localStorage.getItem('user')) ;
+    if (!user) {
+        window.location.href='connexion.html';
+    }
+ }
 
 const deconnect=document.querySelector("#logout");
  deconnect.addEventListener('click',()=>{

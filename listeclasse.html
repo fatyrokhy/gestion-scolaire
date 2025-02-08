@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste des Étudiants</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css">
+</head>
+<body class="bg-gray-100 ">
+    <nav class="bg-slate-400 p-2 grid grid-cols-2">
+        <ul></ul>
+        <button id="logout" class="bg-slate-800 text-white px-4 py-2 rounded-full order-2 place-self-end">
+            Déconnexion
+        </button>
+    </nav>
+
+    <div class="max-w-6xl mx-auto bg-white p-6 rounded-lg shadow-md mt-12">
+        <div class="flex justify-between">
+            <h2 class="text-2xl font-semibold mb-4">Liste des Classes</h2>
+            <button id="popup" class=" bg-slate-600 text-lg text-white p-2 rounded">Nouveau</button>
+        </div>
+        <table class="w-full border-collapse bg-white shadow-lg rounded-lg overflow-hidden mt-4">
+            <thead class="bg-slate-600 text-white">
+                <tr>
+                    <th class="py-3 px-4 text-center">Classe</th>
+                    <th class="py-3 px-4 text-center">Filière</th>
+                    <th class="py-3 px-4 text-center">Niveau</th>
+                    <th class="py-3 px-4 text-center">Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tableClass" class="text-center">
+                <!-- Liste des classes  -->
+            </tbody>
+        </table>
+    </div>
+
+    <div id="popupForm" class="hidden fixed inset-0 flex justify-center items-center bg-black bg-opacity-50">
+        <div class="bg-white p-6 rounded-lg shadow-md w-96">
+            <h3 class="text-xl font-semibold mb-4">Ajouter une classe</h3>
+            <form>
+                <label class="block mb-2">Niveau :</label>
+                <input type="text" id="niveau" class="w-full border  p-2 rounded-lg mb-2">
+
+                <label class="block mb-2">Filière :</label>
+                <input type="text" id="filiere" class="w-full border p-2 rounded-lg mb-2">
+
+                <div class="flex justify-between mt-4">
+                    <button type="button" class="bg-slate-800 text-white px-4 py-2 rounded">Ajouter</button>
+                    <button type="button" id="closePopup" class="bg-slate-400 text-white px-4 py-2 rounded">Annuler</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="listeclasse.js" type="module"></script>
+
+</body>
+</html>

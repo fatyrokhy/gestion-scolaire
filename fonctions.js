@@ -1,6 +1,7 @@
 const form=document.querySelector("#form");
 // pour connexion
 form.addEventListener('submit',async (event)=>{
+
 event.preventDefault();
 let isValid=true;
 const email=document.querySelector("#mail").value;
@@ -42,7 +43,7 @@ try {
     
     if (!user) {
         erreurPassword.textContent = "Email ou mot de passe incorrect.";
-        window.location.href = "login.html"; 
+        // window.location.href = "connexion.html"; 
     }
     console.log(user);
     
@@ -50,7 +51,7 @@ try {
         localStorage.setItem("user", JSON.stringify(user));
         switch (user.role) {
         case "admin":
-            window.location.href = "listeEtudiant.html";
+            window.location.href = "listeclasse.html";
             break;
         case "etudiant":
             window.location.href = "mescours.html";
@@ -72,9 +73,9 @@ try {
     // Pour se déconnecter
     const deconnect=document.querySelector("#logout");
     deconnect.addEventListener('click',()=>{
-        alert("deconnecte")
-        // localStorage.removeItem("user");
-        // window.location.href = "connexion.html"; 
+        // alert("deconnecte");
+        localStorage.removeItem("user");
+        window.location.href = "connexion.html"; 
     });
 
 

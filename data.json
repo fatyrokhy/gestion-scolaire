@@ -98,36 +98,36 @@
       }
     ],
     "classe": [
-      { "id": 1, "classe": "L1 - DEV", "id_niveau": "L1", "id_filiere": "DEV" },
-      { "id": 2, "classe": "L2 - GL", "id_niveau": "L2", "id_filiere": "GL" },
-      { "id": 3, "classe": "L2 - DEV", "id_niveau": "L2", "id_filiere": "DEV" },
+      { "id": 1, "classe": "L1 - DEV", "niveau": "L1", "filiere": "DEV" },
+      { "id": 2, "classe": "L2 - GL", "niveau": "L2", "filiere": "GL" },
+      { "id": 3, "classe": "L2 - DEV", "niveau": "L2", "filiere": "DEV" },
       {
         "id": 4,
         "classe": "L1 - MARKETING",
-        "id_niveau": "L1",
-        "id_filiere": "MARKETING"
+        "niveau": "L1",
+        "filiere": "MARKETING"
       },
       {
         "id": 5,
         "classe": "L2 - DESIGN",
-        "id_niveau": "L2",
-        "id_filiere": "DESIGN"
+        "niveau": "L2",
+        "filiere": "DESIGN"
       },
-      { "id": 6, "classe": "L2 - MPI", "id_niveau": "L2", "id_filiere": "MPI" },
-      { "id": 7, "classe": "L1 - GL", "id_niveau": "L1", "id_filiere": "GL" },
-      { "id": 8, "classe": "L3 - PC", "id_niveau": "L3", "id_filiere": "PC" },
-      { "id": 9, "classe": "M1 - PC", "id_niveau": "M1", "id_filiere": "PC" },
+      { "id": 6, "classe": "L2 - MPI", "niveau": "L2", "filiere": "MPI" },
+      { "id": 7, "classe": "L1 - GL", "niveau": "L1", "filiere": "GL" },
+      { "id": 8, "classe": "L3 - PC", "niveau": "L3", "filiere": "PC" },
+      { "id": 9, "classe": "M1 - PC", "niveau": "M1", "filiere": "PC" },
       {
         "id": 10,
         "classe": "M2 - Data",
-        "id_niveau": "M2",
-        "id_filiere": "Data"
+        "niveau": "M2",
+        "filiere": "Data"
       },
       {
         "id": 11,
         "classe": "M1 - DESIGN",
-        "id_niveau": "M1",
-        "id_filiere": "DESIGN"
+        "niveau": "M1",
+        "filiere": "DESIGN"
       }
     ],
     "cours":[],
